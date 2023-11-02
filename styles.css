@@ -5,14 +5,17 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     padding: 10px 0;
 }
-
 .top-menu {
+    background-color: #796d6d; /* Background color of the menu */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Padding inside the menu */
     text-align: center;
 }
+
 
 .top-menu ul {
     list-style: none;
@@ -33,8 +36,60 @@ header {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
-
+.top-menu ul li a:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
 .main {
     padding: 20px;
+}
+
+
+nav {
+    background-color: #007bff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.development a {
+    display: block; /* Display sub-topic links vertically */
+    margin: 5px 0; /* Add some spacing between sub-topic links */
+}
+.co {
+color: red;
+font-weight: bold;
+}
+.text-container {
+margin-left: 20px;
+width: 800px; /* Set a fixed width for the text container */
+text-align: justify;
+}
+
+.text-container p {
+/* Make paragraphs inline to allow justifying each line individually display: inline;*/
+width: 100%; /* Set the width to 100% to allow justification */
+}
+.tab-container {
+display: flex;
+}
+
+.tab {
+cursor: pointer;
+padding: 10px 20px;
+margin-right: 10px;
+background-color: #f2f2f2;
+}
+
+.tab-content {
+display: none;
+}
+
+.tab-content.show {
+display: block;
 }

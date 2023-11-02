@@ -5,74 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topics Navigation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin-left: 20px;
-        }
-
-        nav {
-            background-color: #007bff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        .development a {
-            display: block; /* Display sub-topic links vertically */
-            margin: 5px 0; /* Add some spacing between sub-topic links */
-        }
-        .co {
-        color: red;
-        font-weight: bold;
-    }
-    .text-container {
-        margin-left: 20px;
-    width: 800px; /* Set a fixed width for the text container */
-    text-align: justify;
-}
-
-.text-container p {
-     /* Make paragraphs inline to allow justifying each line individually display: inline;*/
-    width: 100%; /* Set the width to 100% to allow justification */
-}
-.tab-container {
-    display: flex;
-}
-
-.tab {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #f2f2f2;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.show {
-    display: block;
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav>
-        <a href="#myprojects">My Projects</a>
-        <a href="#python">Python</a>
-        <a href="#android">Android</a>
-        <a href="#reactjs">React.js</a>
-        <a href="#firebase">Firebase</a>
-        <a href="#nodejs">Node.js</a>
-        <a href="#git">Git and GitHub</a>
-    </nav>
+    <header>
+        <h1>My Website</h1>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="myprojects.html">My Projects</a></li>
+                <li><a href="project-note.html">Project Note</a></li>
+                <li><a href="contact.html">Contact</a></li>              
+            </ul>
+        </nav>
+    </header>
+    
     <div class="tab-container">
-        <div class="tab" onclick="showTab('tab1')">My Projects</div>
         <div class="tab" onclick="showTab('tab2')">Python</div>
         <div class="tab" onclick="showTab('tab3')">Android</div>
         <div class="tab" onclick="showTab('tab4')">Reactjs</div>
@@ -80,80 +30,7 @@
         <div class="tab" onclick="showTab('tab6')">Node.js</div>
         <div class="tab" onclick="showTab('tab7')">Git</div>
     </div>
-    <div id="tab1Content" class="tab-content">
-        <div id="myprojects">
-            <h1>My Projects</h1>
-            <div class="development">
-                <a href="#py">Python</a>
-                <a href="#apk">Android</a>
-                <a href="#rjs">Reactjs</a>
-                <a href="#ino">Arduino</a>
-            <!-- Add more sub-topic links as needed -->
-            </div>
-            <div id="py">
-                <h1>Python</h1>
-                <div class="text-container">
-                    IDE Pycham
-                    1.chatBoat	- Programme to learn Flask
-                    2.TelegramBoat - Bot in messaging app Telegram
-                    3. esp32cam – to display the esp32camera video stream(ip)
-                    3.esp32cam_attendance- Attendance system using face recognition ,                                data entered in google sheet
-                    4.PJ_QR – QR code generator
-                    5.smartPowerRouter – Power router for Source to Load (GUI interface)
-                    6.openaiProject - It is OpenAI based chat programme in python
-                    8.testProject - contains learning python codes .
-                    9.webApp - Flask project
-                </div>
-            </div>
-            <div id="apk">
-                <h1>Android</h1>
-                <div class="text-container">
-                    Language: Java
-                    IDE : Android Studio
-                    1.CameraXMLkit *
-                    2.DdeccsFDsms *
-                    3.DDECCSsms *
-                    4.dhg *
-                    5.QRscan*
-                    6.DSNGapp*
-                    7.DTT *
-                    8.ENG_MIS *
-                    9.FaceDetectionAPI*
-                    10.FragmentActivity
-                    11.FreagmentTest
-                    12.HomeApplication
-                    13.HomeoCovid
-                    14.HomeSmartD
-                    15.Mask
-                    16.MaskControl
-                    17.MaskDetector
-                    18.MyRobot
-                    19.PictureApplication
-                    20.Relax21D
-                    21.SmartHome
-                    22.SMSVerifyApp
-                    23.VirtualLab
-                    24.ZoomActivity
-                </div>
-            </div>
-            <div id="rjs">
-                <h1>Reactjs</h1>
-                <div class="text-container">
-                    IDE – VS Code
-                    Folder	URL	Hosting
-                    Wehelp	wehelp-381512.web.app    	Firebase
-                    MY-APP	Latheefdd.github.io/myreactapp/	github
-                    Ulsapp-firebase-host	https://ulsapp.web.app	Firebase
-                </div>
-            </div>
-            <div id="ino">
-                <h1>Arduino</h1>
-                <div class="text-container">
-
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div id="tab2Content" class="tab-content">
         <div id="python">
             <h1>Python</h1>
