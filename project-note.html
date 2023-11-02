@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-left: 20px;
+        }
+
+        nav {
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .development a {
+            display: block; /* Display sub-topic links vertically */
+            margin: 5px 0; /* Add some spacing between sub-topic links */
+        }
+        .co {
+        color: red;
+        font-weight: bold;
+    }
+    .text-container {
+        margin-left: 20px;
+    width: 800px; /* Set a fixed width for the text container */
+    text-align: justify;
+}
+
+.text-container p {
+     /* Make paragraphs inline to allow justifying each line individually display: inline;*/
+    width: 100%; /* Set the width to 100% to allow justification */
+}
+.tab-container {
+    display: flex;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #f2f2f2;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.show {
+    display: block;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#myprojects">My Projects</a>
+        <a href="#python">Python</a>
+        <a href="#android">Android</a>
+        <a href="#reactjs">React.js</a>
+        <a href="#firebase">Firebase</a>
+        <a href="#nodejs">Node.js</a>
+        <a href="#git">Git and GitHub</a>
+    </nav>
+    <div class="tab-container">
+        <div class="tab" onclick="showTab('tab1')">My Projects</div>
+        <div class="tab" onclick="showTab('tab2')">Python</div>
+        <div class="tab" onclick="showTab('tab3')">Android</div>
+        <div class="tab" onclick="showTab('tab4')">Reactjs</div>
+        <div class="tab" onclick="showTab('tab5')">Firebase</div>
+        <div class="tab" onclick="showTab('tab6')">Node.js</div>
+        <div class="tab" onclick="showTab('tab7')">Git</div>
+    </div>
+    <div id="tab1Content" class="tab-content">
+        <div id="myprojects">
+            <h1>My Projects</h1>
+            <div class="development">
+                <a href="#py">Python</a>
+                <a href="#apk">Android</a>
+                <a href="#rjs">Reactjs</a>
+                <a href="#ino">Arduino</a>
+            <!-- Add more sub-topic links as needed -->
+            </div>
+            <div id="py">
+                <h1>Python</h1>
+                <div class="text-container">
+                    IDE Pycham
+                    1.chatBoat	- Programme to learn Flask
+                    2.TelegramBoat - Bot in messaging app Telegram
+                    3. esp32cam – to display the esp32camera video stream(ip)
+                    3.esp32cam_attendance- Attendance system using face recognition ,                                data entered in google sheet
+                    4.PJ_QR – QR code generator
+                    5.smartPowerRouter – Power router for Source to Load (GUI interface)
+                    6.openaiProject - It is OpenAI based chat programme in python
+                    8.testProject - contains learning python codes .
+                    9.webApp - Flask project
+                </div>
+            </div>
+            <div id="apk">
+                <h1>Android</h1>
+                <div class="text-container">
+                    Language: Java
+                    IDE : Android Studio
+                    1.CameraXMLkit *
+                    2.DdeccsFDsms *
+                    3.DDECCSsms *
+                    4.dhg *
+                    5.QRscan*
+                    6.DSNGapp*
+                    7.DTT *
+                    8.ENG_MIS *
+                    9.FaceDetectionAPI*
+                    10.FragmentActivity
+                    11.FreagmentTest
+                    12.HomeApplication
+                    13.HomeoCovid
+                    14.HomeSmartD
+                    15.Mask
+                    16.MaskControl
+                    17.MaskDetector
+                    18.MyRobot
+                    19.PictureApplication
+                    20.Relax21D
+                    21.SmartHome
+                    22.SMSVerifyApp
+                    23.VirtualLab
+                    24.ZoomActivity
+                </div>
+            </div>
+            <div id="rjs">
+                <h1>Reactjs</h1>
+                <div class="text-container">
+                    IDE – VS Code
+                    Folder	URL	Hosting
+                    Wehelp	wehelp-381512.web.app    	Firebase
+                    MY-APP	Latheefdd.github.io/myreactapp/	github
+                    Ulsapp-firebase-host	https://ulsapp.web.app	Firebase
+                </div>
+            </div>
+            <div id="ino">
+                <h1>Arduino</h1>
+                <div class="text-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab2Content" class="tab-content">
+        <div id="python">
+            <h1>Python</h1>
+            <div class="development">
+                <a href="#venv">Introduction to Venv</a>
+                <a href="#conda-env">CONDA environment</a>
+                <a href="#opencv">Introduction to openCV</a>
+                <a href="#face-recognition">Face Recognition</a>
+                <!-- Add more sub-topic links as needed -->
+            </div>
+            <div id="venv">
+                <h2>Virtual Environment</h2>
+                <div class="text-container">
+                    <h3>To activate a virtual environment (venv) in PyCharm, follow these steps:</h3>
+                    <p>Navigate to Your Project directory:<span class="co">C:\Users\lathe\PROJECT\PycharmProjects</span> </p>
+                    <p>Create a Virtual Environment:	<span class="co">python -m venv venv_name</span>  </p>
+                    <p>Activate the Virtual Environment:<span class="co">.\venv_name\Scripts\Activate</span> </p>
+                    <p>Once activated, your PowerShell prompt should change, indicating that you are now working within the virtual environment. You can install packages and run Python scripts isolated within this environment. </p>
+                    <p>deactivate the virtual environment : deactivate</p>
+                </div>
+                    <h2>Recreate Virtual Environment: </h2>
+                    <div class="text-container">
+                        <p>Navigate to your project directory. Delete the existing venv folder (if it exists):<span class="co">rd /s /q venv</span></p>
+                        <p>Create a new virtual environment:<span class="co"></span>python -m venv venv</p>
+                    </div>
+            </div>
+            <h2>Conda Environment</h2>
+            <div id="conda-env">
+                <div class="text-container">
+                <p>To switch from a virtual environment created with venv (the standard Python virtual environment tool)to a Conda environment, you can follow these steps:</p>
+                <p>If your virtual environment (created with venv) is currently activated, deactivate it first. In your terminal or command prompt, simply type:
+                venv\Scripts\deactivate</p>
+                <p>Create a New Conda Environment:<span class="co">conda create --name myenv python=3.8</span></p>
+                <p>Activate the Conda Environment:<span class="co">conda activate myenv</span></p>
+                <p>To deactivate the Conda environment and switch back to your system's default Python environment, you can use the following command:
+                <span class="co">conda deactivate</p>
+                <p>This will deactivate the currently active Conda environment, allowing you to return to the base Conda environment or the system's  default Python environment.</p>
+                <p>When you are using a Conda environment as your Python interpreter in PyCharm, you can install libraries directly from within PyCharm. Here's how you can do it:</p>
+                <p>Open your PyCharm IDE and make sure your project is open.Configure Conda Interpreter: in the project settings.</p>
+                <p><span class="co">File > Settings >Project: Select your project name > Python Interpreter.</span> </p>
+                <p>Here, select your Conda environment from the drop-down menu.</p>
+                <p>If it's not listed, you can add it by clicking on the gear icon and choosing "Add..." and then selecting "Conda Environment."</p>
+                <p>Once your Conda environment is set, you can install libraries from within PyCharm. Open the terminal within PyCharm by clicking on View > Tool Windows > Terminal.</p>
+                <p>In the terminal, use the conda install command to install libraries. For example, to install the numpy library, you would type:<span class="co">conda install numpy</span></p>
+                <p>Remember to ensure that your Conda environment is activated when you are working in the terminal within PyCharm.</p>
+                </div>
+            </div>
+            <div id="opencv">
+                <h2>openCV computer vision library</h2>
+                <div class="text-container">
+                    <p>In the context of Python, cv2 typically refers to the OpenCV library, which is a popular computer vision and machine learning software library.</p>
+                    <p>To install OpenCV, you should use the following command:<span class="co"> pip install opencv-python</span></p>
+                    <p>This command will install the official Python package for OpenCV. If you specifically need the contrib package, you can install it using:<span class="co"> pip install opencv-contrib-python</span></p>
+                </div>
+            </div>
+            <div id="face-recognition">
+                <h2>Face Recognition library</h2>
+                <div class="text-container">
+                    <p>Ensure you have dlib installed. face_recognition relies on the dlib library for face detection and recognition<p>
+                    </p><span class="co"> pip install dlib</span></p>
+                    <p><span class="co">pip install face_recognition</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tab3Content" class="tab-content">
+        <div id="android">
+            <h1>Android</h1>
+            <p>Android is a mobile operating system...</p>
+        </div>
+    </div>
+    <div id="tab4Content" class="tab-content">
+    <div id="reactjs">
+        <h1>React.js</h1>
+        <p>React.js is a JavaScript library for building user interfaces...</p>
+    </div>
+    </div>
+    <div id="tab5Content" class="tab-content">
+    <div id="firebase">
+        <h1>Firebase</h1>
+        <p>Firebase is a mobile and web application development platform...</p>
+        <div class="development">
+            <a href="#fb">Firebase</a>
+            <a href="#react">React webapp firebase hosting</a>
+            <a href="#opencv"></a>
+            <a href="#face-recognition"></a>
+            <!-- Add more sub-topic links as needed -->
+        </div>
+        <div id="fb">
+            <h1>Firebase</h1>
+            <div class="text-container">
+        `google-services.json` and `firebase-tools` are two different aspects of Firebase development:
+ 
+1. google-services.json`: For Android application
+   - `google-services.json` is a configuration file used by Android applications to connect to Firebase services. It contains important information such as the API keys, project IDs, and other settings specific to your Firebase project. This file is necessary for integrating Firebase services into your Android app.
+   - You typically download this file from the Firebase Console and include it in your Android project's `app` module.
+ 
+2. firebase-tools: for managing Firebase projects and deployments.
+   - `firebase-tools` is a command-line interface (CLI) that provides a set of tools for managing Firebase projects and deployments. It allows you to deploy your web apps, functions, hosting configurations, and more to Firebase directly from the command line.
+   - With `firebase-tools`, you can deploy your web app files, manage Firebase Hosting configurations, deploy Cloud Functions, access Firebase services, and perform various other tasks related to Firebase project management.
+ In summary, `google-services.json` is specific to Android projects and contains configuration details for connecting your Android app to Firebase services, while `firebase-tools` is a versatile CLI tool that allows you to manage and deploy various aspects of your Firebase project, including web apps, hosting, and functions. They serve different purposes within the context of Firebase development.
+ 
+Firebase services in your React web app.
+Yes, running `npm install firebase` is necessary if you want to use Firebase services in your React web app. 
+ When you install the `firebase` package using npm (Node Package Manager), it downloads the Firebase JavaScript SDK, which provides the tools and libraries necessary to interact with Firebase services in your web application. This SDK enables functionalities such as authentication, real-time database, storage, and more.
+ Here's how you can install the Firebase package for your React web app:
+ 1. Open your terminal or command prompt.
+ 2. Navigate to your React project directory using the `cd` command.
+ 3. Run the following command to install the Firebase package: npm install firebase
+   This command will download and install the Firebase SDK and its dependencies into your project's `node_modules` directory.
+ After installing the Firebase package, you can import specific Firebase modules and use them in your React components to integrate Firebase services into your web app. For example:
+ javascript
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
+// ... other Firebase services you want to use
+ const firebaseConfig = {
+  // Your Firebase configuration object here
+};
+ firebase.initializeApp(firebaseConfig);
+ // Now you can use Firebase services in your React components.
+Make sure to replace `"firebase/auth"` and `"firebase/firestore"` with the specific Firebase services you plan to use in your app.
+            </div>
+        </div>
+        <div id="react">
+            <h1>React web app firebase hosting</h1>
+            <div class="text-container">
+        <p>Firebase is a mobile and web application development platform...</p>
+        Reactjs Webapp hosting in Firebase:
+Firebase project : create using Firebase Console
+1. Create a new React app by running the following:  npx create-react-app  app-name
+2. Install Firebase Tools(CLI) globally:		    npm install –g firebase-tools
+make sure that you are inside of the root directory of your React app
+3. Login to Firebase(Authenticate the Firebase CLI) by running:: 	firebase login
+4. Initialize Firebase in Your React App(Connect Firebase to your React App) :	 firebase init
+You will then be prompted with a series of questions and configuration options :
+1.Choose the Firebase features you want to set up (e.g., Hosting).
+2.Use an existing project
+Select your Firebase project from the list.
+3.Set your public directory to “build” (this is the directory where the React app build is 		located).
+4.Configure as a single-page app by answering “Yes” to the question.
+5.Choose “No” for the automatic overwriting of the “index.html” file.
+Firebase will generate some configuration files, including “firebase.json” and “firebase.js.”
+5. Make sure your React app is ready for deployment. Build your app by running:
+Prepare the React App:	 npm run build
+This command generates an optimized production-ready build of your React app in the “build” folder.
+6. Deploy the React App to Firebase: 	firebase deploy
+Firebase will build and deploy your React app to its hosting servers.
+Once the deployment is complete, Firebase will provide you with a hosting URL where your React app is hosted. It will look something like this: https://your-project-name.firebaseapp.com
+ 
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="tab6Content" class="tab-content">
+    <div id="nodejs">
+        <h1>Node.js and npm</h1>
+        <div class="text-container">
+    Node.js   and npm					29-10-2023
+Npm  javascript package manager
+npm is the package manager for the Node JavaScript platform. It puts modules in place so that node can find them, and manages dependency conflicts intelligently
+Downloading and installing Node.js and npm
+To publish and install packages to and from the public npm registry or a private npm registry, you must install Node.js and the npm command line interface using either a Node version manager or a Node installer. We strongly recommend using a Node version manager like nvm to install Node.js and npm. We do not recommend using a Node installer, since the Node installation process installs npm in a directory with local permissions and can cause permissions errors when you run npm packages globally.
+Note: to download the latest version of npm, on the command line, run the following command: 	npm install -g npm
+To see if you already have Node.js and npm installed and check the installed version, run the following commands:
+node -v
+npm -v
+Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions of npm to ensure they work for users on different versions.
+If you are unable to use a Node version manager, you can use a Node installer to install both Node.js and npm on your system.
+Node.js installer
+NodeSource installer
+If you're using OS X or Windows, use one of the installers from the Node.js download page. Be sure to install the version labeled LTS. Other versions have not yet been tested with npm.
+
+.
+
+It is extremely configurable to support a variety of use cases. Most commonly, you use it to publish, discover, install, and develop node programs.
+npm help     to get a list of available commands.
+npm install  to install its dependencies.
+npm search command to show everything that's available in the public registry
+npm ls 	         to show everything you've installed
+If a package lists a dependency using a git URL, npm will install that dependency using the git command and will generate an error if it is not installed
+See folders to learn about where npm puts stuff.
+In particular, npm has two modes of operation:
+local mode: npm installs packages into the current project directory, which defaults to the current working directory. Packages install to ./node_modules, and bins to ./node_modules/.bin.
+global mode: npm installs packages into the install prefix at       $npm_config_prefix/lib/node_modules and bins to $npm_config_prefix/bin.
+Local mode is the default. Use -g or --global on any command to run in global    mode   instead.
+        </div>
+    </div>
+    </div>
+        <div id="tab7Content" class="tab-content">
+        <div id="git">
+            <h1>Git and GitHub</h1>
+            <div class="text-container">
+        What is Git?
+        Git is a free, open-source version control software. It was created by Linus Torvalds in 2005. 
+        This basically means that Git is a content tracker. So Git can be used to store content — and it is mostly used to store code because of the other features it provides.
+        Real life projects generally have multiple developers working in parallel. So they need a version control system like Git to make sure that there are no code conflicts between them.
+        Also, the requirements in such projects change often. So a version control system allows developers to revert and go back to an older version of their code.
+        The branch system in Git allows developers to work individually on a task (For example: One branch -> One task OR One branch -> One developer). Basically think of Git as a small software application that controls your code base, if you’re a developer.
+        Git Repositories
+If we want to start using Git, we need to know where to host our repositories.
+A repository (or “Repo” for short) is a project that contains multiple files. In our case a repository will contain code-based files.
+There are two ways you can host your repositories. One is online (on the cloud) and the second is offline (self-installed on your server).
+There are three popular Git hosting services: GitHub (owned by Microsoft), GitLab (owned by GitLab) and BitBucket. We’ll use GitHub as our hosting service.
+Git makes it easy to contribute to open source projects
+Using GitHub is free if your project is open source, and it includes a wiki and issue tracker that makes it easy to include more in-depth documentation and get feedback about your project.
+If you want to contribute, you just fork (get a copy of) a project, make your changes, and then send the project a pull request using GitHub's web interface. This pull request is your way of telling the project you're ready for them to review your changes.
+Now we’ll learn how to use Git & GitHub
+GitHub account creation
+Git installation
+Now we need to install Git's tools on our computer. We’ll use CLI to communicate with GitHub.
+set a default username and email
+Working with GitHub projects
+We’ll work with GitHub projects in two ways.
+Type 1: Create the new repository on GitHub, 
+Pick a name for your first repository, add a small description, check the    ‘Initialize this repository with a README’ box, and click on the “Create repository” button.
+   clone it to your PC,
+get a copy of the repository on your computer. To clone a repository means that you're taking a repository that’s on the server and cloning it to your computer – just like downloading it.
+On the repository page, you need to get the “HTTPS” address. 
+Use the command on your terminal.  git clone [HTTPS ADDRESS]
+This command will make a local copy of the repository hosted at the given address.
+You need to move in it with the command. cd [NAME OF REPOSITORY]
+
+   work on it. 
+Now, in that folder we can create files, work on them, and save them locally. To save them in a remote place — like GitHub – we have do a process called a “commit”.
+  pushing it back.
+There are 4 steps in a commit: ‘status’ , ‘add’ , ‘commit’ and ‘push’. All the following steps must be performed within your project. Let's go through them one by one.
+1.“status”: The first thing you need to do is to check the files you have modified. To do this, you can type the following command to make a list of changes appear. git status
+2. “add”: With the help of the change list, you can add all files you want to upload with the following command, git add [FILENAME] [FILENAME] [...]
+3. “commit”: Now that we have added the files of our choice, we need to write a message to explain what we have done. This message may be useful later if we want to check the change history. Here is an example of what we can put in our case.
+	    git commit -m "Added sample HTML file that contain basic syntax"
+4. “push”: Now we can put our work on GitHub. To do that we have to ‘push’ our files to Remote. Remote is a duplicate instance of our repository that lives somewhere else on a remote server. To do this, we must know the remote’s name (Mostly remote is named origin). To figure out that name, type the following command. git remote
+Now we can safely ‘push’ our work by the following command. 
+git push origin master
+Pulling is the act of receiving from GitHub.
+Pushing is the act of sending to GitHub.
+Type 2: Work on your project locally then create the repository on GitHub and push it to remote.
+make a fresh repository from an existing folder on our computer and send that to GitHub.By default, any directory on our computer is not a Git repository – but we can turn it into a Git repository by executing the following command in the terminal.  git init
+After converting our directory to a Git repository, the first thing we need to do is to check the files we have by using the following command   
+git status
+git add [FILENAME] [FILENAME] [...]
+
+To “add” all of the files in our Repository we can use the following command: git add .
+After the staging area (the add process) is complete, we can check whether the files are successfully added or not by executing the 
+git status
+If those particular files are in green, you’ve done your work!
+Then we have to “commit” with a description in it.
+git commit -m "Adding web Survey form"
+
+If my repository started on GitHub and I brought it down to my computer, a remote is already going to be attached to it (Type 1). But if I’m starting my repository on my computer, it doesn’t have a remote associated with it, so I need to add that remote (Type 2).
+So to add that remote, we have to go to GitHub first. Create a new repository and name it whatever you want to store it in GitHub. Then click the “Create repository” button.
+In Type 2, Please don’t initialize the repository with a README file when creating a new repository on the GitHub web page.
+Copy the HTTPS address. Now we’ll create the remote for our epository.
+git remote add origin [HTTPS ADDRESS]
+After executing this command, we can check whether we have successfully added the remote or not by the following command
+
+git remote
+
+And if it outputs “origin” you’ve added the remote to your projecJust remember we can state any name for the remote by changing the name “origin”. For example:
+git remote add [REMOTE NAME] [HTTPS ADDRESS]
+Now, we can push our project to GitHub without any problems!
+git push origin master
+
+
+
+use "git restore --staged <file>..." to unstage
+git remote -v
+git remote show origin
+git remote set-url origin [https address]
+git branch --show-current
+git branch
+
+
+
+    </div>
+        </div>
+
+    </div>
+    
+        <script>
+            function showTab(tabId) {
+    // Hide all tab contents
+    var tabContents = document.querySelectorAll('.tab-content');
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('show');
+    }
+
+    // Show the selected tab content
+    var selectedTabContent = document.getElementById(tabId + 'Content');
+    if (selectedTabContent) {
+        selectedTabContent.classList.add('show');
+    }
+}
+   </script>
+</body>
+
+</html>
